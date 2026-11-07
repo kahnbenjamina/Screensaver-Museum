@@ -1,0 +1,121 @@
+body         { font-family: 'Courier New', Courier, monospace;
+               color: #e0e0e0;
+               background-image: url("starfield4k.PNG"); 
+               background-size: 100%; }
+
+/*.box         { background-color: #1f1f1f; max-width: 50%; margin: 0.5% auto;}*/
+
+.faqs        { width: 80%; margin: auto; background-color: #1f1f1f95; display:flex; flex-direction: row; justify-content: space-between; align-items: stretch; border-radius:25px;}
+
+h1           { text-align: center; }
+
+hr           { background: #e0e0e0;
+               height: 1px;
+               border: 0; }
+
+ul           { list-style-type: none; }
+
+.bullet      { list-style-type: disc; }
+
+li           { padding: 3px; 
+               border: 1px solid transparent; }
+
+a:link       { text-decoration: none; 
+               --tw-text-opacity: 1;
+               color: rgb(59 130 246 / var(--tw-text-opacity)); }
+
+a:visited    { color: #7022B5; }
+
+.toc         { display: block;
+               padding: 3px;
+               border: 1px solid transparent; }
+
+.toc:hover   { background: #404040;
+               border: 1px solid #e0e0e0;
+               text-decoration: none; }
+
+.answer      { background: #404040;
+               padding: 6px;
+               border: 1px solid #e0e0e0; }
+
+.return      { font-size: 0.9rem; }
+
+.quote       { font-size: 0.95rem;
+               color: #d3d3d3; 
+               padding-top: 10px;
+               padding-bottom: 10px; }
+
+/* sidebar menu */
+.sidenav {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 0%;
+  /*height: 90vh;
+  left: 17%;*/
+  overflow-x: hidden;
+  /*padding: 8px 0;*/
+  flex: auto;
+  padding-top: 14px;
+}
+
+.sidenav a, .sidenav p {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #e0e0e0;
+  display: block;
+}
+
+.sidenav p {
+  margin:0px;
+}
+
+.sidenav a:hover {
+  color: #e0e0e0;
+  font-size: 2rem;
+}
+
+.sidenav .sublink {
+  font-size: 18px;
+}
+
+.sidenav .sublink:hover {
+  font-size: 1.5rem;
+}
+
+:where(*, *::after, *::before) {box-sizing: border-box;}
+:where(#visitorCounter, #visitorCounterDisplay, .digit) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e0e0e0;
+}
+:where(#visitorCounter) {
+    padding: 0.5rem 1rem;
+    flex-direction: column;
+    gap: 0.25rem;
+    border: 1px solid #e0e0e0;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+    overflow: clip;
+    &::before {
+        content: "You are visitor:";
+        white-space: nowrap;
+    }
+}
+:where(#visitorCounterDisplay){
+    flex-direction: row-reverse;
+    border: 1px solid #e0e0e0;
+    padding: 0.25rem;
+    gap: 0.25rem;
+    margin: 0;
+    width: 100%;
+}
+:where(.digit) {
+    flex: 1;
+    border: 1px solid #e0e0e0;
+    font-size: 2.5rem;
+    background-size: 100% 100%;
+    &::before {content: attr(data-n)}
+}

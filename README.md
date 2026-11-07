@@ -17,5 +17,3 @@
 ## Version History/Changelog
 
 <em>2026-11-05</em>: Split this part of the project away from the <a href="https://github.com/kahnbenjamina/Screensaver-of-the-Day" target="_blank" rel="noopener noreferrer">Screensaver of the Day</a> portion of it.
-
-<em>2026-11-06</em>: Finished the template file <code>template.html</code> and cleaned up the HTML file and the related CSS files to make them as easy as possible to use in the creation of new pages.
